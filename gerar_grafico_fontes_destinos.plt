@@ -22,7 +22,7 @@ set format y "%.1t×10^{%T}"
 set yrange [0:ymax*1.3]
 
 plot 'ip_sources_destinations.dat' using 2:xtic(1) with histograms, \
-     '' using 0:($2 < ymax*0.02 ? ymax*0.04 : $2*1.03):(sprintf("%.1f×10^{%d}", $2/(10**floor(log10($2))), floor(log10($2)))) with labels notitle, \
-     '' using (0.5):(ymax*1.15):(sprintf("Razão Origens/Destinos: %.2fx", ratio)) with labels font ",19" notitle
+     '' using 0:($2 < ymax*0.02 ? ymax*0.04 : $2+ymax*0.08):(sprintf("%.1f×10^{%d}", $2/(10**floor(log10($2))), floor(log10($2)))) with labels notitle, \
+     '' using (0.5):(ymax*1.22):(sprintf("Razão Origens/Destinos: %.2fx", ratio)) with labels font ",19" notitle
 
 print "Gráfico 'grafico_fontes_destinos_unicos.png' gerado com sucesso!"

@@ -1,7 +1,7 @@
 # Mapa de Calor Geográfico: Origem da Radiação IBR (marcadores "X" sobre
 # mapa político, com máscara terra/mar via Shapely para remover pontos no oceano)
 
-set terminal pngcairo size 4800,3000 enhanced font "Verdana,28"
+set terminal pngcairo size 4800,2200 enhanced font "Verdana,28"
 set output 'grafico_heatmap_geografico.png'
 
 # Filtra os bins de source_geo_heatmap.dat que caem no oceano
