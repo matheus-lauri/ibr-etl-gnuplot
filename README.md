@@ -54,7 +54,7 @@ original.
 - `mask_geo_points.py` — filtra pontos geográficos sobre o oceano antes da renderização do mapa de
   calor (invocado automaticamente pelo Gnuplot via `system()`)
 - `gerar_grafico_*.plt` — os 25 *scripts* Gnuplot, um por visualização
-- `*.png` — exemplo do resultado de cada *script*, gerado sobre o Dataset~3 do Cloud Telescope
+- `*.png` — exemplo do resultado de cada *script*, gerado sobre o Dataset 3 do Cloud Telescope
 - `world_50m.dat`, `ne_50m_admin_0_countries.geojson` — dados geográficos de referência (contorno
   continental), usados pelo mapa de calor geográfico
 
